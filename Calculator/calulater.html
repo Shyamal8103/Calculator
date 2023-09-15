@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Calculater</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calci.js"></script>
+</head>
+
+<body>
+    <div class="main-container flex">
+        <div class="container">
+            <div class="upper-div">
+                <div class="sub-container flex">
+                    <h1>Calculater</h1>
+                </div>
+                <div class="sub-container">
+
+                    <input type="text" name="display" id="display" readonly>
+                </div>
+            </div>
+            <div class="sub-container">
+                <form>
+                    <div class="btn">
+                        <input type="text" value="AC" onclick="blank()" readonly>
+                        <input type="text" value="%" onclick="cal(this.value)" readonly>
+                        <input type="text" value="C" onclick="ob()" readonly>
+                        <input type="text" value="/" onclick="cal(this.value)"  readonly>
+                    </div>
+                    <div class="btn">
+                        <input type="text" value="7" onclick="run(this.value)" readonly>
+                        <input type="text" value="8" onclick="run(this.value)" readonly>
+                        <input type="text" value="9" onclick="run(this.value)" readonly>
+                        <input type="text" value="*" onclick="cal(this.value)" readonly>
+                    </div>
+                    <div class="btn">
+                        <input type="text" value="4" onclick="run(this.value)" readonly>
+                        <input type="text" value="5" onclick="run(this.value)" readonly>
+                        <input type="text" value="6" onclick="run(this.value)" readonly>
+                        <input type="text" value="-" onclick="cal(this.value)" readonly>
+                    </div>
+                    <div class="btn">
+                        <input type="text" value="1" onclick="run(this.value)" readonly>
+                        <input type="text" value="2" onclick="run(this.value)" readonly>
+                        <input type="text" value="3" onclick="run(this.value)" readonly>
+                        <input type="text" value="+" onclick="cal(this.value)" readonly>
+                    </div>
+                    <div class="btn">
+                        <input type="text" value="0" onclick="run(this.value)" readonly>
+                        <input type="text" value="00" onclick="run(this.value)" readonly>
+                        <input type="text" value="." onclick="run(this.value)" readonly>
+                        <input type="text" value="=" onclick="display.value=eval(display.value)" readonly>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
